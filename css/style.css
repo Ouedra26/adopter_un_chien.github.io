@@ -1,0 +1,516 @@
+* {
+    box-sizing: border-box;
+}
+
+* html {
+    scroll-behavior: smooth;
+}
+
+* body {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #040404;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* style pour le HEADER */
+
+nav {
+    font-weight: bold;
+    width: 100% !important;
+    margin: auto !important;
+    text-align: center !important;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+nav h1 {
+    margin-top: 10px;
+    margin-left: 0 !important;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+nav h1 a {
+    color: #040404;
+    text-decoration: none;
+}
+
+nav h1 a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+nav h1:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+nav h1 span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+nav h1 span:hover {
+    color: #040404;
+}
+
+nav .menu {
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 45px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+nav .menu a {
+    margin: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+nav .menu a:hover {
+    color: #040404;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header {
+    margin: 0 auto !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-content: center !important;
+    background: url(../img/accueil.jpg) no-repeat bottom/cover;
+    height: 100vh !important;
+}
+
+main h2 {
+    position: absolute;
+    top: 20%;
+    font-family: sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: rgba(0, 0, 0, 0.24);
+    font-weight: 700px;
+}
+
+main .section1 {
+    /* STYLE POUR SECTION 1 */
+    position: relative;
+    background: url(../img/apropos.jpg) no-repeat center/cover fixed;
+    height: 100vh !important;
+}
+
+main .section1 .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #ebe8e82a;
+    height: 80%;
+    width: 90%;
+}
+
+main .section1 .card h4 {
+    text-align: center;
+    font-size: 4rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+main .section1 .card h4:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+main .section1 .card P {
+    margin: 20px 70px;
+}
+
+main .section2 {
+    /* STYLE POUR SECTION 2 */
+    height: 100vh;
+    background: url(../img/service.jpg) no-repeat center/cover fixed;
+    width: 100% !important;
+}
+
+main .section2 h4 {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 4rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+main .section2 .service {
+    margin: 5% auto !important;
+    width: 30% !important;
+    height: 60vh;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #040404;
+}
+
+main .section2 .service h3 {
+    margin: 10px 0 !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+}
+
+main .section2 .service P {
+    margin: 35px auto !important;
+    font-size: 1.2rem;
+}
+
+main .section3 {
+    /* STYLE POUR SECTION 3 */
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+}
+
+main .section3 h4 {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 4rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+main .section3 .carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+main .section3 .carousel .composant {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+main .section3 .carousel .composant img {
+    width: 70% !important;
+    height: 70vh !important;
+}
+
+main .section3 .carousel .composant h5 {
+    font-size: 1.5rem;
+}
+
+main .section3 .carousel .composant .caption {
+    position: absolute;
+    top: 10% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+main .section3 .carousel #nav-gauche {
+    position: absolute;
+    top: 50%;
+    left: 350px;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+main .section3 .carousel #nav-droit {
+    position: absolute;
+    right: 315px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+main .section4 {
+    /* STYLE POUR SECTION 4 */
+    color: rgba(255, 255, 255, 0.7);
+    height: 100vh;
+    background: url(../img/contact.jpg) no-repeat center/cover fixed;
+    width: 100% !important;
+    align-items: center;
+    margin: auto !important;
+}
+
+main .section4 h4 {
+    margin: 50px auto !important;
+    text-align: center;
+    font-size: 4rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #040404;
+}
+
+main .section4 .adress {
+    color: #040404 !important;
+}
+
+main .section4 input {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+}
+
+main .section4 input:hover {
+    color: #040404;
+}
+
+main .section4 .submit {
+    background-color: gray;
+    font-size: 0.8rem;
+}
+
+main .section4 .submit:hover {
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+/* FIN MAIN */
+
+footer {
+    width: 100% !important;
+    height: 30vh;
+    background-color: #040404;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .para1 {
+    margin: 50px 0 !important;
+    padding-top: 50px;
+}
+
+footer .para1 span {
+    margin-top: 50px !important;
+    margin-right: 10px !important;
+    font-size: .9rem;
+}
+
+footer .para1 span:nth-child(1) {
+    margin-top: 20px;
+    margin-left: 10px !important;
+    font-size: 1rem;
+}
+
+footer .copy {
+    /* STYLE POUR COPY-RIGHT */
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* FIN FOOTER */
+
+@media screen and (max-width: 990px) {
+    /* style pour le HEADER */
+    nav h1 {
+        font-size: 1rem;
+        margin-left: 0px !important;
+        margin-right: 50px !important;
+    }
+    nav h1 a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+    }
+    nav h1:hover {
+        color: rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+    }
+    nav h1 span {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    nav h1 span:hover {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .menu {
+        margin: auto !important;
+        margin-left: 0px;
+    }
+    .menu a {
+        text-transform: capitalize !important;
+        margin-right: 5px !important;
+        font-size: 1rem !important;
+    }
+    main h2 {
+        font-size: 4rem;
+    }
+    main .section1 .card h4 {
+        font-size: 2rem !important;
+    }
+    main .section2 h4 {
+        font-size: 2rem !important;
+    }
+    main .section2 .service {
+        margin: 4% auto !important;
+    }
+    main .section2 h3 {
+        margin: 4% auto !important;
+        text-transform: capitalize !important;
+        font-size: 1rem !important;
+    }
+    main .section2 .service p {
+        margin: 20px auto !important;
+        font-size: 1rem !important;
+    }
+    main .section3 h4 {
+        font-size: 2rem !important;
+    }
+    main .section4 h4 {
+        font-size: 2rem !important;
+    }
+    /* FIN MAIN */
+    footer {
+        height: 30vh !important;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+        /* FOOTER */
+    }
+    footer .para1 {
+        font-size: .6rem !important;
+    }
+    footer span {
+        margin-top: 20px;
+        margin-right: 20px;
+        font-size: .6rem !important;
+    }
+    footer span:nth-child(1) {
+        margin-top: 20px;
+        margin-left: 10px !important;
+        font-size: .6rem !important;
+    }
+    footer .copy {
+        /* STYLE POUR COPY-RIGHT */
+        font-size: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* FIN TABLETTE */
+
+@media screen and (max-width: 760px) {
+    /* style pour le HEADER */
+    nav h1 {
+        text-align: center;
+        margin: 0 !important;
+        padding: 5px;
+        font-size: 1rem !important;
+    }
+    nav .menu {
+        margin-left: 0px;
+    }
+    nav .menu a {
+        margin: 5px !important;
+        font-size: .8rem !important;
+    }
+    .header {
+        height: 75vh !important;
+    }
+    main h2 {
+        top: 30%;
+        font-size: 2.5rem;
+    }
+    /* STYLE POUR SECTION 1 */
+    main .section1 .card {
+        height: 60vh !important;
+    }
+    main .section1 .card h4 {
+        font-size: 1.5rem !important;
+        margin: 20px !important;
+    }
+    main .section1 .card P {
+        margin: 10px 30px;
+        font-size: .8rem !important;
+    }
+    /* STYLE POUR SECTION 2 */
+    main .section2 h4 {
+        font-size: 1.5rem !important;
+        margin: 10px !important;
+    }
+    main .section2 .service {
+        width: 100% !important;
+        height: 40vh;
+    }
+    main .section2 .service:nth-child(3) {
+        display: none;
+    }
+    main .section2 .service h3 {
+        font-size: 1rem !important;
+        margin: 20px !important;
+    }
+    main .section2 .service P {
+        margin: 10px !important;
+        font-size: .8rem !important;
+    }
+    /* STYLE POUR SECTION 3 */
+    main .section3 {
+        background: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+    }
+    main .section3 h4 {
+        font-size: 1.5rem !important;
+        margin: 20px auto !important;
+    }
+    main .section3 .carousel {
+        margin-top: 50px !important;
+    }
+    main .section3 .carousel .composant img {
+        text-align: center !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        height: 60vh !important;
+    }
+    main .section3 .carousel .composant h5 {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+    main .section3 .carousel .composant p {
+        font-size: .8rem;
+    }
+    main .section3 .carousel .composant .caption {
+        top: 10% !important;
+    }
+    /* STYLE POUR SECTION 4 */
+    main .section4 h4 {
+        margin: 50px auto !important;
+        font-size: 1.5rem !important;
+    }
+    /* FIN MAIN */
+    /* FOOTER */
+    footer {
+        height: 10vh !important;
+    }
+    footer .para1 {
+        display: none;
+    }
+    .copy {
+        font-size: .8rem !important;
+    }
+    /* FIN FOOTER */
+}
+
+
+/*# sourceMappingURL=style.css.map */
